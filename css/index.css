@@ -1,0 +1,72 @@
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+}
+
+.logos {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    position: relative;
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+    border: 5px solid #ccc;
+    position: absolute;
+    animation-name: fadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    animation-direction: alternate;
+}
+
+.logo2 {
+    width: 30%;
+    height: 30%;
+    border: 5px solid #ccc;
+}
+
+span.glyphicon {
+    color: #c0c0c0;
+    font-size: 2rem;
+    height: 30px;
+    line-height: 30px;
+}
+.submitSuccess{
+    display: none;
+    width: 80%;
+    height:10%;
+    border-radius:10px 10px 10px 10px;
+    padding-top: 5%;
+    color: rgb(177, 249, 152);
+    background: rgba(53, 53, 53, 0.5);
+    font-size: 2rem;
+    font-weight: 900;
+    z-index: 1000;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
